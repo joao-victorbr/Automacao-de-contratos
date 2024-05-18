@@ -4,7 +4,7 @@ Este projeto automatiza a geração de contratos de locação de imóveis utiliz
 Foram utilizados dados fictícios de pessoas como exemplo.
 A seguir estão os detalhes sobre o código e sua funcionalidade.
 
-## Instalação e Importação de Bibliotecas
+## Instalação e importação de bibliotecas
 
 Para utilizar este projeto, é necessário instalar as seguintes bibliotecas:
 
@@ -24,9 +24,9 @@ import os
 import shutil
 ```
 
-## Funcionalidades do Código
+## Funcionalidades do código
 
-### 1. Limpeza das Pastas de Destino
+### 1. Limpeza das pastas de destino
 
 O código remove todos os arquivos das pastas `words` e `pdfs` para garantir que os novos documentos sejam gerados sem conflitos:
 
@@ -39,7 +39,7 @@ for folder in ['words','pdfs']:
             shutil.rmtree(os.path.join(root, d))
 ```
 
-### 2. Leitura da Planilha Excel
+### 2. Leitura da planilha Excel
 
 Os dados fictícios dos contratos são lidos de uma planilha Excel:
 
@@ -47,7 +47,7 @@ Os dados fictícios dos contratos são lidos de uma planilha Excel:
 info_table = pd.read_excel('D:\Documentos\Automação_Python\Automação_contrato_final\Informacoes.xlsx')
 ```
 
-### 3. Geração dos Documentos de Contrato
+### 3. Geração dos documentos de contrato
 
 Para cada linha na planilha, um novo documento de contrato é criado, preenchendo os campos com as informações fornecidas:
 
